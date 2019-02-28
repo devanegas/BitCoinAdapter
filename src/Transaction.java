@@ -1,5 +1,6 @@
 public class Transaction {
     double numCoins;
+    boolean isValid;
 
     public double getCoins(){
         return numCoins;
@@ -7,5 +8,6 @@ public class Transaction {
 
     public Transaction (double coins){
         this.numCoins += coins;
+        this.isValid = true;
     }
 }
